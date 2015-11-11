@@ -1,0 +1,110 @@
+.slick-codepen { 
+	width: 100%; 
+	height: 390px; 
+	background-color: rgba(0,0,0,0); 
+	position: relative;overflow: hidden;
+	margin-bottom: 0;
+} 
+.slick-codepen .slick-slide { 
+	height: 100%;
+} 
+.slick-codepen .slick-slide img { 
+	margin: 0; 
+	padding: 0; 
+	display: block;  
+	margin: 0 auto; 
+    width: 100%;
+    max-width: 895px;
+} 
+
+.slick-list {
+	padding: 0!important;
+}
+
+.slider-nav.slick-initialized.slick-slider {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.slick-prev {
+	left: 0;
+	z-index: 9;
+}
+.slick-next {
+	right: 0;
+	z-index: 9;
+}
+/*.slick-codepen .slick-prev { 
+	left: 0; 
+} 
+.slick-codepen .slick-next { 
+	right: 0; 
+} 
+.slick-codepen .slick-prev, .slick-codepen .slick-next { 
+background-color: transparent; 
+top: 360px; 
+z-index: 99999; 
+width: 20%; 
+height: 100%; 
+-webkit-transition: all 0.3s ease-out 0s; 
+transition: all 0.3s ease-out 0s; 
+} */
+/*.slick-codepen .slick-prev:hover, .slick-codepen .slick-next:hover { 
+	background-color: rgba(0, 0, 0, 0.25); 
+} 
+.slick-codepen .slick-prev:hover:before, .slick-codepen .slick-next:hover:before { 
+color: rgba(255, 255, 255, 0.65); 
+} 
+.slick-codepen .slick-prev:before, .slick-codepen .slick-next:before { 
+font-size: 38px; 
+color: transparent; 
+-webkit-transition: all 0.3s ease-out; 
+transition: all 0.3s ease-out; 
+} 
+.slick-codepen .slick-dots { 
+width: 100%; 
+bottom: -68px; 
+border-bottom: 1px solid #3498DB; 
+padding: 15px 0; 
+} */
+/*.slick-codepen .slick-dots li.slick-active button:before { 
+color: #3498DB; 
+margin-top: 1px; 
+font-size: 10px; 
+} 
+
+.slider-nav .slick-slide{ 
+opacity: 1; 
+margin: 5px 5px 5px; 
+
+} */
+
+
+
+/*.slider-nav .slick-slide img{ 
+width: 71px; 
+height: 71px; 
+border: 2px solid transparent; 
+} */
+
+/*.slider-nav .slick-current img{ 
+border:2px solid #808080; 
+} */
+
+/*.slick-codepen .slick-current{ 
+width: 720px!important; 
+} */
+/*.slick-list{ 
+padding-left: 0!important; 
+} */
+/*.social_img_photo_report { 
+position: absolute; 
+bottom: 0; 
+left: -100%; 
+width: 300%; 
+text-align: center; 
+z-index: 9; 
+height: 32px; 
+} */

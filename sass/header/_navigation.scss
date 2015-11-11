@@ -1,0 +1,43 @@
+.navigation {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 10px 0;
+	background-color: #FFF;
+	-webkit-box-shadow: 0px 6px 10px -5px rgba(122, 128, 127, 1);
+	-moz-box-shadow:    0px 6px 10px -5px rgba(122, 128, 127, 1);
+	box-shadow:         0px 6px 10px -5px rgba(122, 128, 127, 1);
+	padding: 15px 0;
+	ul {		
+		display: block;
+		float: left;
+		li {
+			display: block;
+			float: left;
+			padding: 10px 40px;
+			border-right: 1px solid #DFDFDF;
+			&:last-of-type {
+				border-right: none;
+			}
+			a {
+				font-family: $l;
+				text-align: center;
+				text-decoration: none;
+				color: #282828;
+				font-size: 17px;
+				&:hover {
+					color: #749FEE;
+				}
+			}
+		}
+	}
+	&__home {
+		display: block;
+		float: left;
+		padding: 0px 40px;
+		color: #749FEE;
+		margin-left: 40px;
+		font-size: 27px;
+		line-height: 39px;
+	}
+}

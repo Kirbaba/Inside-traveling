@@ -1,0 +1,44 @@
+.header {
+	width: 100%;
+	padding: 25px 0;
+	&__topline {
+		display: block;
+		float: left;
+		width: 100%;
+		position: relative;
+		&--logo {
+			display: block;
+			float: left;
+			position: relative;
+			width: 165px;
+			margin: 0 5px;
+		}
+		&--banner {
+			display: block;
+			float: left;
+			position: relative;
+			margin: 15px 5px 0;
+			width: 753px;
+			height: 128px;
+			background-color: #1f73e5;
+			line-height: 128px;
+			color: #FFF;
+			text-align: center;
+			font-family: $b;
+			font-size: 25px;
+		}
+		&--contacts {
+			display: block;
+			float: left;
+			position: relative;
+			width: 220px;
+			margin: 0 5px;
+			padding-top: 50px;
+			h4 {
+				font-family: $b;
+				font-size: 23px;
+				color: #161F5E;				
+			}
+		}
+	}
+}
