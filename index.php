@@ -177,6 +177,13 @@
 		</div>
 	</section>
 
+	<section class="news">
+		<h3>свежие новости</h3>
+		<a href="#" class="news--more">Все новости клуба</a>
+		<div class="news__item"></div>
+		<div class="news__item"></div>
+	</section>
+
 </div>
 
 <? get_footer()?>
