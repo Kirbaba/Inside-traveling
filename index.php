@@ -180,8 +180,34 @@
 	<section class="news">
 		<h3>свежие новости</h3>
 		<a href="#" class="news--more">Все новости клуба</a>
-		<div class="news__item"></div>
-		<div class="news__item"></div>
+		<div class="news__item">
+			<div class="news__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/mountins.jpg" alt="">
+			</div>
+			<div class="news__item--description">
+				<h4>Итоги конкурса “Российские Альпы”</h4>
+				<small>7 октября 2015</small>
+				<a href="#">Читать новость полностью</a>
+				<p>I believe that if life gives you lemons, you should make lemonade... 
+					And try to find somebody whose life has given them vodka, and have a party. </p>
+			</div>
+		</div>
+		<div class="news__item">
+			<div class="news__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/mountins.jpg" alt="">
+			</div>
+			<div class="news__item--description">
+				<h4>Итоги конкурса “Российские Альпы”</h4>
+				<small>7 октября 2015</small>
+				<a href="#">Читать новость полностью</a>
+				<p>I believe that if life gives you lemons, you should make lemonade... 
+					And try to find somebody whose life has given them vodka, and have a party. </p>
+			</div>
+		</div>
+	</section>
+
+	<section class="vk-container">
+		<img src="<?php bloginfo('template_directory'); ?>/img/vk.jpg" alt="">
 	</section>
 
 </div>
