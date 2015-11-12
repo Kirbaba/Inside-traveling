@@ -196,7 +196,7 @@
 
 .home-banner {
 	display: block;
-	float: left;	
+	float: right;	
 	width: 247px;
 	height: 554px;
 	background-color: #1f73e5;
@@ -205,5 +205,82 @@
 	img {
 		width: 100%;
 		height: 100%;
+	}
+}
+
+.whyarewe {
+	display: block;
+	float: left;
+	position: relative;
+	width: 100%;
+	padding: 80px 40px 40px;
+	background-color: #FFF;
+	margin: 25px 0;
+	-webkit-box-shadow: 0px 6px 10px -5px rgba(122, 128, 127, 1);
+	-moz-box-shadow:    0px 6px 10px -5px rgba(122, 128, 127, 1);
+	box-shadow:         0px 6px 10px -5px rgba(122, 128, 127, 1);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;	
+	&:before,
+	&:after{		
+		display: table;
+		content: " ";
+	}
+	&:after{
+		clear: both;
+	}
+	h2 {
+		font-family: $b;
+		text-transform: uppercase;
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	&__item {
+		display: block;
+		float: left;
+		width: 1 / 3 * 100%;
+		position: relative;
+		padding: 0 25px;
+		margin: 25px 0;	
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;	
+		&:before,
+		&:after{		
+			display: table;
+			content: " ";
+		}
+		&:after{
+			clear: both;
+		}
+		p {
+			font-family: $l;
+			text-align: center;
+			font-size: 16px;
+			color: #4F4F4F;
+		}
+		.choice {
+			width: 94px;
+			height: 94px;
+			-moz-border-radius: 47px;
+			-webkit-border-radius: 47px;
+			border-radius: 47px;
+			-moz-background-clip: padding;
+			-webkit-background-clip: padding-box;
+			background-clip: padding-box;
+			display: block;
+			margin: 25px auto;		
+			background-image: url('../img/choice.png');	
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		h4 {
+			text-align: center;
+			font-size: 21px;
+			font-family: $m;
+			margin: 25px 0;			
+		}
 	}
 }

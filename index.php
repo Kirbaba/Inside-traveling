@@ -155,6 +155,28 @@
 		<img src="<?php bloginfo('template_directory'); ?>/img/banner.jpg" alt="">
 	</aside>
 
+	<section class="whyarewe">
+		<h2>Почему стоит путешествовать с нами</h2>
+		<div class="whyarewe__item">
+			<div class="choice blue"></div>
+			<h4 class="blue-text">Необычные<br>туры</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<div class="whyarewe__item">
+			<div class="choice green"></div>
+			<h4 class="green-text">Русскоговорящий<br>гид</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+		<div class="whyarewe__item">
+			<div class="choice yellow"></div>
+			<h4 class="yellow-text">Персональный<br>подход</h4>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+		</div>
+	</section>
+
 </div>
 
 <? get_footer()?>
