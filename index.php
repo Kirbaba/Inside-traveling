@@ -221,6 +221,13 @@
 	<section class="vk-container">
 		<img src="<?php bloginfo('template_directory'); ?>/img/vk.jpg" alt="">
 	</section>
+	
+	<section class="regions">
+		<h2 class="block_title">регионы</h2>
+		<article class="map-space">
+			<div id="map" style="width:100%; height:100%"></div>
+		</article>
+	</section>
 
 </div>
 

@@ -120,3 +120,34 @@ $('.slider-item-slider').slick({
 
 
 });
+
+ymaps.ready(init);
+        
+function init() {
+    var myMap = new ymaps.Map('map', {
+            center: [55.795962, 38.450751],
+            zoom: 16,
+            controls: [],
+            
+        })  ,
+        myPlacemark = new ymaps.Placemark([55.795862, 38.444955], {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: img.url + 'marker.png',
+            // Размеры метки.
+            iconImageSize: [38, 56],
+            iconImageOffset: [-17, -55]
+
+            
+        });
+    
+
+    
+    myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects.add(myPlacemark);
+}
