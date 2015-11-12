@@ -255,4 +255,76 @@ ul {
         .slider .slider-item-slider .slick-slider-item--description a:hover {
           background-color: #d5d5d5; }
 
+.afterslide {
+  width: 275px;
+  display: block;
+  float: left;
+  position: relative; }
+  .afterslide a {
+    height: 78px;
+    width: 240px;
+    display: block;
+    float: right; }
+
+.travel-type {
+  display: block;
+  float: left;
+  position: relative;
+  margin: 45px 0;
+  width: 895px; }
+  .travel-type__item {
+    width: 248px;
+    height: 268px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    display: block;
+    float: left;
+    position: relative;
+    background-color: #fff;
+    -moz-box-shadow: 0 1px 0 #d3d3d3;
+    -webkit-box-shadow: 0 1px 0 #d3d3d3;
+    box-shadow: 0 1px 0 #d3d3d3;
+    overflow: hidden; }
+    .travel-type__item--img {
+      display: block;
+      height: 160px;
+      width: 100%;
+      overflow: hidden; }
+      .travel-type__item--img img {
+        min-width: 100%;
+        height: auto;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
+    .travel-type__item--description {
+      text-align: center;
+      padding: 20px;
+      display: block; }
+      .travel-type__item--description:before, .travel-type__item--description:after {
+        display: table;
+        content: " "; }
+      .travel-type__item--description:after {
+        clear: both; }
+      .travel-type__item--description h4 {
+        font-family: "HelveticaNeueCyrBold";
+        font-size: 18px;
+        color: #4F4F4F;
+        margin-bottom: 5px; }
+      .travel-type__item--description p {
+        font-size: 10px;
+        color: #646464; }
+
+.home-banner {
+  display: block;
+  float: left;
+  width: 247px;
+  height: 554px;
+  background-color: #1f73e5;
+  margin: 45px 0;
+  position: relative; }
+  .home-banner img {
+    width: 100%;
+    height: 100%; }
+
 /*# sourceMappingURL=style.css.map */

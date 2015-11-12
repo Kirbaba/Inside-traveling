@@ -86,7 +86,75 @@
 	  <!-- .slider-thumb-slider -->
 	</div>
 
-	aside.afterslide
+	<aside class="afterslide">
+		<a href="#">Индивидуальные путешествия</a>
+		<a href="#">Групповые путешествия</a>
+		<a href="#">Путешествия по России</a>
+		<a href="#">Заявка на участие</a>
+	</aside>
+
+	<section class="travel-type">
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/trcking.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Треккинг (поход)</h4>
+				<p>Треккинг  – это переход из одной турбазы, находящейся в горах, через ряд перевалов и ущелий на другую турбазу.</p>
+			</span>
+		</a>
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/exclusive.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Экскурсионный тур</h4>
+				<p>Экскурсионные туры - это неповторимый коктейль из стран, городов, культур, природных условий, обычаев.</p>
+			</span>
+		</a>
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/turbaza.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Турбазы</h4>
+				<p>Все о турбазах России - описание, фотографии, контактная информация, отзывы туристов, цены.</p>
+			</span>
+		</a>
+		
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/trcking.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Треккинг (поход)</h4>
+				<p>Треккинг  – это переход из одной турбазы, находящейся в горах, через ряд перевалов и ущелий на другую турбазу.</p>
+			</span>
+		</a>
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/exclusive.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Экскурсионный тур</h4>
+				<p>Экскурсионные туры - это неповторимый коктейль из стран, городов, культур, природных условий, обычаев.</p>
+			</span>
+		</a>
+		<a href="#" class="travel-type__item">
+			<span class="travel-type__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/turbaza.jpg" alt="">
+			</span>
+			<span class="travel-type__item--description">
+				<h4>Турбазы</h4>
+				<p>Все о турбазах России - описание, фотографии, контактная информация, отзывы туристов, цены.</p>
+			</span>
+		</a>
+	</section>
+
+	<aside class="home-banner">
+		<img src="<?php bloginfo('template_directory'); ?>/img/banner.jpg" alt="">
+	</aside>
+
 </div>
 
 <? get_footer()?>
