@@ -72,24 +72,51 @@ jQuery(function($) {
     //     centerMode: true, 
     //     focusOnSelect: true
     // });
- $('.slick-codepen').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 500,
-        arrows: true,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        speed: 500,
-        asNavFor: '.slick-codepen',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true,
-        slide: 'div'
-    });
+ 
+});
+
+jQuery(function($) {
+    // $('.slick-codepen').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     speed: 500,
+    //     arrows: true,
+    //     fade: true,
+    //     asNavFor: '.slider-nav'
+    // });
+    // $('.slider-nav').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     speed: 500,
+    //     asNavFor: '.slick-codepen',
+    //     dots: true,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    // });
+
+$('.slider-item-slider').on('init', function(event, slick, currentSlide){
+  var nrCurrentSlide = slick.currentSlide + 1, // din cauza ca e array si incepe de la 0
+      totalSlidesPerPage = nrCurrentSlide + 3; // daca ai 5 thumb-uri pe pagina pui + 4
+  $('.controls').html(nrCurrentSlide + " - " + totalSlidesPerPage + " of " + slick.slideCount);
+});
+
+$('.slider-thumb-slider').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-item-slider',
+  dots: false,
+  arrows: true,
+  focusOnSelect: false,
+  infinite: true
+});
+
+$('.slider-item-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  asNavFor: '.slider-thumb-slider',
+  infinite: true
 });
 
 
+});
