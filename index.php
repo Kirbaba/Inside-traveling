@@ -87,10 +87,22 @@
 	</div>
 
 	<aside class="afterslide">
-		<a href="#">Индивидуальные путешествия</a>
-		<a href="#">Групповые путешествия</a>
-		<a href="#">Путешествия по России</a>
-		<a href="#">Заявка на участие</a>
+		<a href="#" class="afterslide--but but--individual">
+			<i class="but--individual">
+			</i>
+			<span>Индивидуальные путешествия</span></a>
+		<a href="#" class="afterslide--but">
+			<i class="but--group"></i>
+			<span>Групповые путешествия</span>
+		</a>
+		<a href="#" class="afterslide--but">
+			<i class="but--rus"></i>
+			<span>Путешествия по России</span>
+		</a>
+		<a href="#" class="afterslide--but">
+			<i class="but--request"></i>
+			<span>Заявка на участие</span>
+		</a>
 	</aside>
 
 	<section class="travel-type">
