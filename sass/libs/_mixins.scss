@@ -49,7 +49,7 @@
 	}
 }
 
-@mixin overflow-img {
+@mixin overflow-img() {
 	overflow: hidden;
 	img {
 		min-width: 100%;

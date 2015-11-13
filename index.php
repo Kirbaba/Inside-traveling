@@ -228,7 +228,103 @@
 			<div id="map" style="width:100%; height:100%"></div>
 		</article>
 	</section>
+		
+	<div class="offers">
+		<h2 class="block_title">актуальные предложения</h2>
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
 
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
+		<div class="offers__item">
+			<div class="offers__item--img">
+				<img src="<?php bloginfo('template_directory'); ?>/img/Layer-13.jpg" alt="">
+				<div class="offers__item--price">
+					<p>16 000 руб</p>
+				</div>
+			</div>
+			<div class="offers__item--description">
+				<a href="#" class="offers__item--title">Активная неделя отдыха в горах (Лайт).</a>
+				<a href="#" class="offers__item--category">Кавказ</a>
+				<small>18.10.15 - 24.10.15</small>
+				<p>Количество дней: 7 суток</p>
+				<p>Сложность: 4 из 10</p>
+			</div>
+		</div>
+
+		</div>
+	</div>
 </div>
 
 <? get_footer()?>
