@@ -704,4 +704,102 @@ ul {
     .offers__item:hover .offers__item--price {
       display: block; }
 
+.footer {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #222;
+  padding: 50px 0 30px; }
+  .footer h3 {
+    color: #FFF;
+    font-family: "HelveticaNeueCyrBold";
+    padding-bottom: 25px;
+    border-bottom: 1px solid #a7a7a7;
+    margin-bottom: 25px; }
+  .footer__regions {
+    display: block;
+    float: left;
+    margin-right: 85px;
+    color: #A7A7A7;
+    padding-right: 50px; }
+    .footer__regions h3 {
+      padding-right: 80px; }
+    .footer__regions li {
+      padding: 5px 0; }
+      .footer__regions li a {
+        color: #a7a7a7; }
+        .footer__regions li a:hover {
+          text-decoration: underline; }
+  .footer__sitemap {
+    display: block;
+    float: left;
+    padding: 0 15px;
+    margin-right: 0; }
+    .footer__sitemap h3 {
+      padding-right: 15px; }
+    .footer__sitemap li {
+      padding: 5px 0; }
+      .footer__sitemap li a {
+        color: #a7a7a7; }
+        .footer__sitemap li a:hover {
+          text-decoration: underline; }
+  .footer__contacts {
+    display: block;
+    float: right;
+    text-align: right; }
+    .footer__contacts h3 {
+      border-bottom: none; }
+      .footer__contacts h3 span {
+        border-bottom: 1px solid #a7a7a7;
+        padding-bottom: 25px;
+        padding-left: 150px;
+        margin-bottom: 25px; }
+    .footer__contacts p {
+      margin: 0; }
+      .footer__contacts p b {
+        font-size: 21px;
+        font-family: "HelveticaNeueCyrBold";
+        color: #a7a7a7; }
+    .footer__contacts .footer__contacts--title {
+      font-size: 18px;
+      color: #a7a7a7;
+      margin-top: 30px;
+      margin-bottom: 0; }
+  .footer__support {
+    padding-top: 25px;
+    border-top: 1px solid #a7a7a7;
+    padding-right: 180px;
+    margin-top: 25px; }
+    .footer__support a {
+      text-align: left;
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 18px; }
+      .footer__support a:hover {
+        text-decoration: underline; }
+
+.footer__copyright {
+  margin-top: 15px;
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  background-color: #222;
+  padding: 35px 0; }
+  .footer__copyright p {
+    display: block;
+    float: left;
+    font-size: 16px;
+    color: #a7a7a7;
+    margin: 0; }
+  .footer__copyright a {
+    display: block;
+    float: right;
+    font-size: 16px;
+    color: #a7a7a7;
+    margin: 0; }
+    .footer__copyright a:hover {
+      text-decoration: underline; }
+
 /*# sourceMappingURL=style.css.map */
