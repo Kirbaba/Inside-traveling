@@ -31,12 +31,46 @@
 					<i class="fa fa-home"></i>
 				</a>
 				<ul>
-					<li><a href="#">О нас</a></li>
-					<li><a href="#">Путешествия</a></li>
-					<li><a href="#">Страны</a></li>
-					<li><a href="#">Фотоотчет</a></li>
-					<li><a href="#">Контакты</a></li>
-					<li><a href="#">Расписание</a></li>
+					<li><a href="#" class="navigation__item">О нас</a>			
+			            <ul>
+			            	<li><a href="#">О клубе</a></li>
+			                <li><a href="#">Наши гиды</a></li>
+			                <li><a href="#">СМИ о нас</a></li>
+			            </ul>        
+					</li>
+					<li><a href="#" class="navigation__item">Путешествия</a>
+						<div class="navigation--travel">
+							<select name="navigation--travel--region" id="navigation--travel--region">
+								<option value="altay">Алтай</option>
+								<option value="altay">Алтай</option>
+								<option value="altay">Алтай</option>
+								<option value="altay">Алтай</option>
+								<option value="altay">Алтай</option>
+							</select>
+						</div>
+					</li>
+					<li><a href="#" class="navigation__item">Страны</a>
+						<ul>
+			            	<li><a href="#">Алтай</a></li>
+							<li><a href="#">Байкал</a></li>
+							<li><a href="#">Вьетнам</a></li>
+							<li><a href="#">Греция</a></li>
+							<li><a href="#">Исландия</a></li>
+							<li><a href="#">Кавказ</a></li>
+							<li><a href="#">Камчатка</a></li>
+							<li><a href="#">Крым</a></li>
+							<li><a href="#">Марокко</a></li>
+							<li><a href="#">Непал</a></li>
+							<li><a href="#">Новая зеландия</a></li>
+							<li><a href="#">Танзания</a></li>
+							<li><a href="#">Тибет</a></li>
+							<li><a href="#">Турция</a></li>
+							<li><a href="#">Южная Америка</a></li>
+			            </ul> 
+			        </li>
+					<li><a href="#" class="navigation__item">Фотоотчет</a></li>
+					<li><a href="#" class="navigation__item">Контакты</a></li>
+					<li><a href="#" class="navigation__item">Расписание</a></li>
 				</ul>
 			</nav>
 		</div>
