@@ -1,0 +1,42 @@
+.popup {
+	background: rgba(0, 0, 0, 0.3);
+	position: fixed;
+	display: none;
+	z-index: 5000;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+
+	> div {
+		position: fixed;
+		box-shadow: 0px 0px 5px #666666;		
+		//width: 50%;
+		z-index: 5001;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+  		left: 50%;
+	   	top: 50%;
+	}
+}
+
+.ui-datepicker {
+    background-color: #fff;
+    width: 244px;
+}
+a.ui-datepicker-prev.ui-corner-all {
+	background-image: url('../img/left39.png');
+	background-color: #1b61df;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+a.ui-datepicker-next.ui-corner-all {
+	background-image: url('../img/right39.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: #1b61df;
+}
+

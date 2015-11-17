@@ -38,16 +38,8 @@
 			                <li><a href="#">СМИ о нас</a></li>
 			            </ul>        
 					</li>
-					<li><a href="#" class="navigation__item">Путешествия</a>
-						<div class="navigation--travel">
-							<select name="navigation--travel--region" id="navigation--travel--region">
-								<option value="altay">Алтай</option>
-								<option value="altay">Алтай</option>
-								<option value="altay">Алтай</option>
-								<option value="altay">Алтай</option>
-								<option value="altay">Алтай</option>
-							</select>
-						</div>
+					<li><a href="#" class="navigation__item"  data-js="open">Путешествия</a>
+										
 					</li>
 					<li><a href="#" class="navigation__item">Страны</a>
 						<ul>
@@ -75,3 +67,29 @@
 			</nav>
 		</div>
 	</header>
+
+<div class="popup">
+	<div class="navigation--travel">
+
+			<select name="navigation--travel--region" class="navigation--travel--select" id="navigation--travel--region">
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+			</select>
+			
+			<input type="text" id="datepicker" class="navigation--travel--data" placeholder="Выбрать дату">
+			<label for="navigation--travel--month">Тип путешествия</label>
+			<select name="navigation--travel--month" class="navigation--travel--select" id="navigation--travel--month">
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+				<option value="altay">Алтай</option>
+			</select>
+			<input type="button" value="Поиск" class="navigation--travel--find">
+	
+	</div>
+</div>
+

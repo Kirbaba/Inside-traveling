@@ -120,15 +120,73 @@
 		border-left: 1px solid #DFDFDF;
 	}
 	&--travel {
-		display: none;
-		position: absolute;
-		top: 69px;
-	    left: -245px;
-		margin: 0;
-		z-index: 9;
-		width: 1090px;			
+		float: left;
+		position: relative;			
 		background-color: #749FEE;
-		padding: 10px 15px;
+		padding: 10px 25px;
 		display: block;
-	}
+		//width: 50%;
+		@include inside-pad;
+		&--select {
+			display: block;
+			//float: left;
+			margin: 10px 0;
+			//width: 40%;
+			width: 250px;
+			height: 27px;
+			@include border-radius(3px);
+			@include background-clip(padding-box);
+			background-color: #fff;
+			border:none;
+			outline:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			background-image: url('../img/select-style.png');
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+			padding-left: 15px;			
+		}
+		&--data {
+			display: block;
+			//float: left;
+			margin: 10px 0;
+		    //width: 37%;
+		    width: 235px;
+			height: 27px;
+			@include border-radius(3px);
+			@include background-clip(padding-box);
+			background-color: #fff;
+			border:none;
+			outline:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			background-image: url('../img/select-style.png');
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+			padding-left: 15px;
+		}
+		label {
+			display: block;
+			color: #FFF;
+			font-size: 12px;
+		}
+		&--find {
+			display: block;
+			margin: 10px auto;
+			width: 60px;
+			height: 27px;
+			@include border-radius(1px / 3px);
+			@include background-clip(padding-box);
+			background-color: #484848;
+			@include box-shadow(1px, 2px, 3px, rgba(0,0,0,.28));
+			cursor: pointer;
+			color: #FFF;
+			text-align: center;
+			&:hover {
+				background-color: lighten(#484848, 10%);
+			}
+		}
+	}	
 }

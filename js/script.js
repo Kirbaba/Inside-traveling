@@ -52,73 +52,32 @@ jQuery(function($) {
             scrollTop: top
         }, 1000);
     });
-
-    // $('.slick-codepen').delay(1000).slick({ 
-    //     asNavFor: '.slider-nav', 
-    //     draggable: true, 
-    //     centerMode: true,        
-    //     arrows: true, 
-    //     dots: false, 
-    //     swipeToSlide: true, 
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    // }); 
-    // $('.slider-nav').slick({ 
-    //     slidesToShow: 7, 
-    //     slidesToScroll: 1, 
-    //     asNavFor: '.slick-codepen', 
-    //     dots: false, 
-    //     arrows: true, 
-    //     centerMode: true, 
-    //     focusOnSelect: true
-    // });
- 
 });
 
-jQuery(function($) {
-    // $('.slick-codepen').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     speed: 500,
-    //     arrows: true,
-    //     fade: true,
-    //     asNavFor: '.slider-nav'
-    // });
-    // $('.slider-nav').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     speed: 500,
-    //     asNavFor: '.slick-codepen',
-    //     dots: true,
-    //     centerMode: true,
-    //     focusOnSelect: true
-    // });
+jQuery(function($) {   
+    $('.slider-item-slider').on('init', function(event, slick, currentSlide){
+      var nrCurrentSlide = slick.currentSlide + 1, // din cauza ca e array si incepe de la 0
+          totalSlidesPerPage = nrCurrentSlide + 3; // daca ai 5 thumb-uri pe pagina pui + 4
+      $('.controls').html(nrCurrentSlide + " - " + totalSlidesPerPage + " of " + slick.slideCount);
+    });
 
-$('.slider-item-slider').on('init', function(event, slick, currentSlide){
-  var nrCurrentSlide = slick.currentSlide + 1, // din cauza ca e array si incepe de la 0
-      totalSlidesPerPage = nrCurrentSlide + 3; // daca ai 5 thumb-uri pe pagina pui + 4
-  $('.controls').html(nrCurrentSlide + " - " + totalSlidesPerPage + " of " + slick.slideCount);
-});
+    $('.slider-thumb-slider').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-item-slider',
+      dots: false,
+      arrows: true,
+      focusOnSelect: false,
+      infinite: true
+    });
 
-$('.slider-thumb-slider').slick({
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  asNavFor: '.slider-item-slider',
-  dots: false,
-  arrows: true,
-  focusOnSelect: false,
-  infinite: true
-});
-
-$('.slider-item-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  asNavFor: '.slider-thumb-slider',
-  infinite: true
-});
-
-
+    $('.slider-item-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      asNavFor: '.slider-thumb-slider',
+      infinite: true
+    });
 });
 
 ymaps.ready(init);
@@ -151,3 +110,64 @@ function init() {
     myMap.behaviors.disable('scrollZoom');
     myMap.geoObjects.add(myPlacemark);
 }
+
+function popupOpenClose(popup) {
+    
+    /* Add div inside popup for layout if one doesn't exist */
+    // if ($(".popup-wrapper").length == 0){
+    //     $(popup).wrapInner("<div class='popup-wrapper'></div>");
+    // }
+    
+    /* Open popup */
+    $(popup).show();
+
+    /* Close popup if user clicks on background */
+    $(popup).click(function(e) {
+        if ( e.target == this ) {
+            if ($(popup).is(':visible')) {
+                $(popup).hide();
+            }
+        }
+    });
+
+    /* Close popup and remove errors if user clicks on cancel or close buttons */
+    $(popup).find("button[name=close]").on("click", function() {
+        if ($(".formElementError").is(':visible')) {
+            $(".formElementError").remove();
+        }
+        $(popup).hide();
+    });
+}
+
+$(document).ready(function () {
+    $("[data-js=open]").on("click", function() {
+        popupOpenClose($(".popup"));
+    });
+});
+
+jQuery(function($){
+    $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: '&#x3C;Пред',
+        nextText: 'След&#x3E;',
+        currentText: 'Сегодня',
+        monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь',
+       'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+        monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн',
+        'Июл','Авг','Сен','Окт','Ноя','Дек'],
+        dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
+        dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
+        dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+        weekHeader: 'Нед',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''};
+    $.datepicker.setDefaults($.datepicker.regional['ru']);
+});
+
+$(function() { 
+    $( "#datepicker" ).datepicker(); 
+  
+}); 

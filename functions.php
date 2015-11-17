@@ -7,8 +7,9 @@ require_once TM_DIR . '/lib/Parser.php';
 
 function add_style(){
     //wp_enqueue_style( 'my-bootstrap-extension', get_template_directory_uri() . '/css/bootstrap.css', array(), '1');    
-     wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), '1');
-     wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array(), '1');
+    wp_enqueue_style( 'slick', get_template_directory_uri() . '/css/slick.css', array(), '1'); 
+    wp_enqueue_style( 'jq_ui', get_template_directory_uri() . '/css/jquery-ui-1.9.2.custom.min.css', array(), '1');
+    wp_enqueue_style( 'slick-theme', get_template_directory_uri() . '/css/slick-theme.css', array(), '1');
     wp_enqueue_style( 'fotorama', get_template_directory_uri() . '/css/fotorama.css', array(), '1');
     wp_enqueue_style( 'font-ewesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '1');
     wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/css/style.css', array(), '1');
@@ -19,8 +20,8 @@ function add_style(){
 function add_script(){
     //wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', array(), '1');
     wp_enqueue_script( 'jq', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js', array(), '1');
-    //wp_enqueue_script( 'my-bootstrap-extension', get_template_directory_uri() . '/js/bootstrap.js', array(), '1');
-     wp_enqueue_script( 'yndex-map', 'http://api-maps.yandex.ru/2.1/?lang=ru_RU', array(), '1');
+    wp_enqueue_script( 'jq_ui', get_template_directory_uri() . '/js/jquery-ui-1.9.2.custom.min.js', array(), '1');
+    wp_enqueue_script( 'yndex-map', 'http://api-maps.yandex.ru/2.1/?lang=ru_RU', array(), '1');
     wp_enqueue_script( 'fotorama-js', get_template_directory_uri() . '/js/fotorama.js', array(), '1');
     wp_enqueue_script( 'slick-js', get_template_directory_uri() .  '/js/slick.min.js', array('jq'), '1', true);
     wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/script.js', array(), '1');
